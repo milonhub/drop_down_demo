@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('natural2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar{
+    background-color: black;
+    text-align: center;
+    
+}
+
+.nav-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.nav-bar ul li{
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+}
+.nav-bar .fa-solid,
+.nav-bar .fa-brands{
+    margin-right: 8px;
+}
+.manu-1{
+    display: none;
+}
+.nav-bar ul li:hover .manu-1{
+    display: block;
+    background-color: black;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -60px;
+}
+
+.nav-bar ul li:hover .manu-1 ul {
+    display: block;   
+  }
+  
+  .nav-bar ul li:hover .manu-1 ul li{
+    width: 220px;
+    margin-top: 10px;
+    border-bottom: 2px dotted aqua;  
+    background-color: transparent;
+  }
+  .nav-bar ul li:hover .manu-1 ul li:last-child{
+
+    border-bottom: none;  
+    
+  }
+  
+.fa-angles-right{
+    color: white;
+    float: right;
+}
+
+.manu-1 ul li{
+    color: white;
+}
+.manu-2 {
+    display: none;
+}
+.hover-me:hover .manu-2{
+    display: block;
+    margin-top: -10px;
+    position: absolute;
+    background-color: black;
+    margin-left: 220px;
+}
